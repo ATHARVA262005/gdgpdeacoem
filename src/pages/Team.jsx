@@ -100,25 +100,25 @@ const Team = () => {
           </div>
         </div>
       )}
-      <div className="p-8 space-y-8">
+      <div className="p-4 md:p-8 space-y-8">
         <section>
           <div className="text-center mb-8">
-            <h2 className="text-green-500 text-2xl font-bold mb-4">GDG Campus Organizer (Formerly GDSC Lead)</h2>
-            <p className="text-black">The GDG Campus Organizer, formerly known as GDSC Lead, is responsible for leading and coordinating Google Developer Groups activities on campus.</p>
+            <h2 className="text-green-500 text-xl md:text-2xl font-bold mb-4">GDG Campus Organizer (Formerly GDSC Lead)</h2>
+            <p className="text-black text-sm md:text-base">The GDG Campus Organizer, formerly known as GDSC Lead, is responsible for leading and coordinating Google Developer Groups activities on campus.</p>
           </div>
         </section>
 
         <section className="space-y-8 flex flex-col items-center">
-          <div className='flex flex-row gap-5'>
+          <div className='flex flex-col md:flex-row gap-5'>
             {gdgorganizer.map(member => (
               <MagicCard
                 key={member.name}
-                className="cursor-pointer flex-col items-center justify-center shadow-red-500 shadow-lg m-5 p-4 max-w-sm"
+                className="cursor-pointer flex-col items-center justify-center shadow-red-500 shadow-lg m-5 p-4 max-w-xs md:max-w-sm"
                 gradientColor="#D9D9D955"
               >
-                <div className="flex items-center space-x-4">
-                  <img src={member.image} alt={member.name} className="w-32 h-32 rounded-full border-4 border-green-500" />
-                  <div>
+                <div className="flex flex-col md:flex-row items-center space-x-0 md:space-x-4">
+                  <img src={member.image} alt={member.name} className="w-24 h-24 md:w-32 md:h-32 rounded-full border-4 border-green-500" />
+                  <div className="text-center md:text-left mt-4 md:mt-0">
                     <p className="text-black text-lg font-bold">{member.name}</p>
                     <p className="text-black">{member.position}</p>
                     <p className="text-black text-sm mt-2">{member.bio}</p>
@@ -134,20 +134,20 @@ const Team = () => {
         </section>
       </div>
 
-      <div className="p-8 space-y-8">
+      <div className="p-4 md:p-8 space-y-8">
         {Object.keys(teamData).map((teamLead) => (
-          <section key={teamLead} className="space-y-8 flex flex-col items-center ">
-            <h3 className="text-green-500 text-xl font-bold ">{teamLead} Members</h3>
-            <div className="flex flex-row gap-5">
+          <section key={teamLead} className="space-y-8 flex flex-col items-center">
+            <h3 className="text-green-500 text-lg md:text-xl font-bold mb-4">{teamLead} Members</h3>
+            <div className="flex flex-col md:flex-row gap-5">
               {teamData[teamLead].map((member, index) => (
                 <MagicCard
                   key={member.name}
                   className={`cursor-pointer flex-col items-center justify-center p-4 max-w-xs ${index === 0 ? 'shadow-blue-500 shadow-md' : 'shadow-yellow-500 shadow-md'}`}
                   gradientColor="#D9D9D955"
                 >
-                  <div className="flex items-center space-x-4">
-                    <img src={member.image} alt={member.name} className="w-20 h-20 rounded-full border-4 border-green-500" />
-                    <div>
+                  <div className="flex flex-col md:flex-row items-center space-x-0 md:space-x-4">
+                    <img src={member.image} alt={member.name} className="w-20 h-20 md:w-24 md:h-24 rounded-full border-4 border-green-500" />
+                    <div className="text-center md:text-left mt-4 md:mt-0">
                       <p className="text-black text-lg font-bold">{member.name}</p>
                       <p className="text-black">{member.position}</p>
                       <a href={member.linkedin} target="_blank" rel="noopener noreferrer" className="text-black flex items-center space-x-1 mt-2">
