@@ -103,8 +103,8 @@ const Team = () => {
       <div className="p-4 md:p-8 space-y-8">
         <section>
           <div className="text-center mb-8">
-            <h2 className="text-green-500 text-xl md:text-2xl font-bold mb-4">GDG Campus Organizer (Formerly GDSC Lead)</h2>
-            <p className="text-black text-sm md:text-base">The GDG Campus Organizer, formerly known as GDSC Lead, is responsible for leading and coordinating Google Developer Groups activities on campus.</p>
+            <h2 className="text-xl md:text-4xl font-bold mb-4">GDG Campus Organizer (Formerly GDSC Lead)</h2>
+            <p className="text-black text-sm md:text-base"> A GDG Campus Organizer is a dedicated student leader who manages and drives the activities of Google Developer Groups at their university. They organize events, workshops, and meetups to foster a community of developers, promote Google’s technologies, and provide valuable learning and networking opportunities for fellow students. They act as a bridge between the university and the broader GDG network, encouraging collaboration and innovation within the tech community.</p>
           </div>
         </section>
 

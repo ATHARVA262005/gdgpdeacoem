@@ -20,4 +20,15 @@
       39% 35%
     );
   }
+
+  /* Add this CSS in your global styles or component-specific styles */
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
   
