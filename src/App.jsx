@@ -1,7 +1,6 @@
 import { BrowserRouter as Router, Route, Routes, useLocation } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 import Home from './pages/Home';
-import Blog from './pages/Blog';
 import Events from './pages/Events';
 import Team from './pages/Team';
 import Sponsors from './pages/Sponsors';
@@ -37,7 +36,6 @@ function App() {
           <main className="flex-grow">
             <Routes>
               <Route path="/" element={<Home />} />
-              <Route path="/blog" element={<Blog />} />
               <Route path="/events" element={<Events />} />
               <Route path="/team" element={<Team />} />
               <Route path="/sponsors" element={<Sponsors />} />

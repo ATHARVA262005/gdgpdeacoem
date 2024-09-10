@@ -37,9 +37,6 @@ const Header = () => {
             <Link to="/" className="nav-item">Home</Link>
           </li>
           <li>
-            <Link to="/blog" className="nav-item">Blog</Link>
-          </li>
-          <li>
             <Link to="/events" className="nav-item">Events</Link>
           </li>
           <li>
@@ -57,7 +54,6 @@ const Header = () => {
         >
           <ul className="flex flex-col mt-16 space-y-4 p-4">
             <li><Link to="/" onClick={() => setIsOpen(false)} className="hover:text-yellow-300">Home</Link></li>
-            <li><Link to="/blog" onClick={() => setIsOpen(false)} className="hover:text-yellow-300">Blog</Link></li>
             <li><Link to="/events" onClick={() => setIsOpen(false)} className="hover:text-yellow-300">Events</Link></li>
             <li><Link to="/team" onClick={() => setIsOpen(false)} className="hover:text-yellow-300">Team</Link></li>
             <li><Link to="/sponsors" onClick={() => setIsOpen(false)} className="hover:text-yellow-300">Sponsors</Link></li>
