@@ -22,7 +22,7 @@ const Header = () => {
   }, []);
 
   return (
-    <header className="sticky right-0 top-2 inset-x-0 z-50 w-46 md:w-1/2 mx-auto bg-blue-800/90 shadow-md rounded-full">
+    <header className="sticky right-0 top-1 inset-x-0 z-50 w-46 md:w-1/2 mx-auto bg-blue-800/90 shadow-md rounded-full">
       <nav className="relative max-w-[66rem] w-full px-6 py-3 mx-auto flex items-center justify-between md:justify-center">
         <div className="md:hidden flex">
           {/* Mobile Menu Button aligned to the left */}
