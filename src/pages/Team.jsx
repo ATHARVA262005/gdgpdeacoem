@@ -150,7 +150,7 @@ const Team = () => {
                     <div className="text-center md:text-left mt-4 md:mt-0">
                       <p className="text-black text-lg font-bold">{member.name}</p>
                       <p className="text-black">{member.position}</p>
-                      <a href={member.linkedin} target="_blank" rel="noopener noreferrer" className="text-black flex items-center space-x-1 mt-2">
+                      <a href={member.linkedin} target="_blank" rel="noopener noreferrer" className="text-black flex items-center justify-center md:justify-start space-x-1 mt-2">
                         <FaLinkedin />
                         <span>LinkedIn</span>
                       </a>
