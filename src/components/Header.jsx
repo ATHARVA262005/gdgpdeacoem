@@ -22,7 +22,7 @@ const Header = () => {
   }, []);
 
   return (
-    <header className="sticky right-0 top-1 inset-x-0 z-50 w-46 md:w-1/2 mx-auto bg-blue-800/90 shadow-md rounded-full">
+    <header className="sticky right-0 top-1 inset-x-0 z-50 w-46 md:w-1/2 mx-auto bg-blue-600/85 shadow-md rounded-full">
       <nav className="relative max-w-[66rem] w-full px-6 py-3 mx-auto flex items-center justify-between md:justify-center">
         <div className="md:hidden flex">
           {/* Mobile Menu Button aligned to the left */}
@@ -45,18 +45,22 @@ const Header = () => {
           <li>
             <Link to="/sponsors" className="nav-item">Sponsors</Link>
           </li>
+          <li>
+            <Link to="/certificates" className="nav-item">Certificates</Link>
+          </li>
         </ul>
 
         {/* Mobile Navigation */}
         <div
           ref={mobileMenuRef}
-          className={`fixed inset-y-0 left-0 z-40 w-64 bg-blue-800 text-white transform ${isOpen ? 'translate-x-0' : '-translate-x-full'} transition-transform duration-300 ease-in-out md:hidden`}
+          className={`fixed inset-y-0 left-0 z-40 w-64 bg-blue-500 text-white transform ${isOpen ? 'translate-x-0' : '-translate-x-full'} transition-transform duration-300 ease-in-out md:hidden`}
         >
           <ul className="flex flex-col mt-16 space-y-4 p-4">
             <li><Link to="/" onClick={() => setIsOpen(false)} className="hover:text-yellow-300">Home</Link></li>
             <li><Link to="/events" onClick={() => setIsOpen(false)} className="hover:text-yellow-300">Events</Link></li>
             <li><Link to="/team" onClick={() => setIsOpen(false)} className="hover:text-yellow-300">Team</Link></li>
             <li><Link to="/sponsors" onClick={() => setIsOpen(false)} className="hover:text-yellow-300">Sponsors</Link></li>
+            <li><Link to="/certificates" onClick={() => setIsOpen(false)} className="hover:text-yellow-300">Certificates</Link></li>
           </ul>
         </div>
       </nav>

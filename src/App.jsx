@@ -7,6 +7,8 @@ import Sponsors from './pages/Sponsors';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import Loader from './components/Loader'; // Import Loader component
+import VerifiedCertificate from './pages/VerifiedCertificate';
+import VerifyCertificate from './pages/VerifyCertificate';
 
 function App() {
   const [loading, setLoading] = useState(false);
@@ -39,6 +41,8 @@ function App() {
               <Route path="/events" element={<Events />} />
               <Route path="/team" element={<Team />} />
               <Route path="/sponsors" element={<Sponsors />} />
+              <Route path="/certificates" element={<VerifyCertificate />} />
+              <Route path="/verified-certificates/:certificateId" element={<VerifiedCertificate />} />
             </Routes>
           </main>
           <Footer />
